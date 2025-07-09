@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>We Kids United SJA - Home</title>
+  <!-- Import formal fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    /* Header with Logo and Navigation */
+    header {
+      background-color: #002147; /* Formal dark blue */
+      padding: 1rem 0;
+      color: #fff;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+    }
+    .nav-logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .nav-logo h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    /* New: Added Home button */
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+    
+    /* Hero Section with Background Image */
+    .hero {
+      position: relative;
+      height: 80vh;
+      background: url('haiti.jpeg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); /* dark overlay */
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 1rem;
+    }
+    .hero-content h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-content .btn {
+      padding: 0.8rem 1.5rem;
+      background: #ffcc00;
+      color: #002147;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero-content .btn:hover {
+      background: #e6b800;
+    }
+    
+    /* Section Styles */
+    .section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #002147;
+    }
+    .section-content {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+    .section-content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Home Page Highlights Grid (Three Parts) */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .highlight-card {
+      background: #f0f0f0;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .highlight-card h3 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #002147;
+    }
+    .highlight-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #002147;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-content h2 {
+        font-size: 2.5rem;
+      }
+      .hero-content p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="WeKids.png" alt="Logo">
+        <h1>We Kids United SJA</h1>
+      </div>
+      <nav>
+        <ul>
+          <!-- Added Home button -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>A Crisis in Haiti</h2>
+      <p>Stand with us to bring hope and lasting change.</p>
+      <button class="btn" onclick="window.location.href='mission.html'">Discover Our Mission</button>
+    </div>
+  </section>
+  
+  <!-- Section 1: The Crisis -->
+  <section class="section" id="crisis">
+    <h2 class="section-title">The Crisis</h2>
+    <div class="section-content">
+      <p>
+        Haiti has faced monumental challenges—from the catastrophic 2010 earthquake to the turmoil following the 2021 presidential assassination.
+      </p>
+      <p>
+        Today, over 80% of Port Au Princé is under siege, with thousands displaced and vital services in jeopardy. Haiti is facing a deepening medical and humanitarian crisis—hospitals are closing, cholera is spreading, and over a million people are displaced by violence. With rising hunger and collapsing health services, urgent action is needed.  
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 2: The Impact -->
+  <section class="section" id="impact">
+    <h2 class="section-title">The Impact</h2>
+    <div class="section-content">
+      <p>
+        This crisis isn’t just about numbers—it’s about real lives disrupted by violence, poverty, and despair.
+      </p>
+      <p>
+        Communities are losing hope, and urgent action is needed to rebuild and restore dignity.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 3: Our Vision -->
+  <section class="section" id="vision">
+    <h2 class="section-title">Our Vision</h2>
+    <div class="section-content">
+      <p>
+        We Kids United SJA is committed to transforming crisis into opportunity. Through sustainable initiatives, we aim to rebuild Haiti’s healthcare system and empower its economy.
+      </p>
+      <p>
+        Join us in our mission to restore hope and create a brighter future for Haiti.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Highlights Grid: Inspiring Phrases -->
+  <section class="section" id="highlights">
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <h3>The Reality</h3>
+        <p>
+          A devastating earthquake, political upheaval, and gang violence have left Haiti in dire need.
+        </p>
+      </div>
+      <div class="highlight-card">
+        <h3>The Numbers</h3>
+        <p>
+          Over 80% of Port Au Princé under siege and 700,000+ displaced—each number tells a story of struggle.
+        </p>
+      </div>
+      <div class="highlight-card">
+        <h3>Our Call to Action</h3>
+        <p>
+          Your support can help rebuild communities, restore healthcare, and renew hope in a nation desperate for change.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 We Kids United SJA. All rights reserved.</p>
+  </footer>
+</body>
+</html>

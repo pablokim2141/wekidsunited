@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: #004d40;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.nav-logo h1 {
+  font-size: 1.8rem;
+  font-family: 'Lobster', cursive;
+  color: #ffeb3b;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* ---------- Common Container ---------- */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ---------- Page Titles ---------- */
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #004d40;
+}
+
+/* ---------- About Page Styles ---------- */
+.about-section {
+  margin-bottom: 2rem;
+}
+.about-section h2 {
+  color: #004d40;
+  margin-bottom: 1rem;
+}
+.about-section p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Executive Board Grid (Used on About Page) */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.board-card {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.board-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.board-card h3 {
+  margin: 0.5rem 0;
+  color: #004d40;
+  font-size: 1.2rem;
+}
+.board-card p {
+  flex-grow: 1;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Mission Page Styles ---------- */
+.mission-statement {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.mission-details {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ---------- Initiatives Page Styles ---------- */
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.initiative-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.initiative-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.initiative-card h3 {
+  margin: 1rem;
+  color: #004d40;
+  font-size: 1.2rem;
+}
+.initiative-card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ---------- Contact Page Styles ---------- */
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  background: #004d40;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.contact-form button:hover {
+  background: #00332e;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}

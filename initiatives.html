@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Initiatives - We Kids United SJA</title>
+  <!-- Import formal fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    /* Header with Logo and Navigation */
+    header {
+      background-color: #002147;
+      padding: 1rem 0;
+      color: #fff;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+    }
+    .nav-logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .nav-logo h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+    
+    /* Main Container */
+    .container {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .page-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #002147;
+    }
+    
+    /* Initiatives Grid (Same styling as main page highlights) */
+    .initiatives-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+      gap: 2rem;
+      justify-items: center;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .initiative-card {
+      background: #f0f0f0;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .initiative-card h3 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #002147;
+    }
+    .initiative-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #002147;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .page-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="WeKids.png" alt="Logo">
+        <h1>We Kids United SJA</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <h2 class="page-title">Our Initiatives</h2>
+    <div class="initiatives-grid">
+      <div class="initiative-card">
+        <h3>MYI MUN Korea 4.0</h3>
+        <p>
+          In collaboration with MyiMUN_Korea, we host MYI MUN Korea 4.0 to raise awareness and funds by engaging young minds on the Haitian crisis.
+        </p>
+      </div>
+      <div class="initiative-card">
+        <h3>Charity Movie Night</h3>
+        <p>
+          Partnering with SJA Roots and Shoots, our Charity Movie Night unites the community for an evening of film and conversation, all to support sustainable projects in Haiti.
+        </p>
+      </div>
+      <div class="initiative-card">
+        <h3>Haiti Poster Contest</h3>
+        <p>
+          Our poster contest challenges creative minds to capture Haiti’s resilience and plight—raising both awareness and crucial funds.
+        </p>
+      </div>
+      <div class="initiative-card">
+        <h3>Medical Devices Donation</h3>
+        <p>
+          In partnership with university hospitals, we donate essential medical devices directly to Haiti, strengthening its healthcare system one life at a time.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 We Kids United SJA. All rights reserved.</p>
+  </footer>
+</body>
+</html>

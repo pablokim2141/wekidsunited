@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - We Kids United SJA</title>
+  <!-- Import formal fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Header with Logo and Navigation (No Home Button originally) */
+    header {
+      background-color: #002147;
+      padding: 1rem 0;
+      color: #fff;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+    }
+    .nav-logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .nav-logo h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    /* Added Home button */
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+    /* Section Styles */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .page-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #002147;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2rem;
+      color: #002147;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    /* Executive Board Grid */
+    .board-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+      gap: 1.5rem;
+      justify-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .board-card {
+      width: 300px;
+      height: 300px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .board-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .board-card h3 {
+      margin: 0.5rem 0;
+      font-family: 'Merriweather', serif;
+      font-size: 1.2rem;
+      color: #002147;
+    }
+    .board-card p {
+      font-size: 0.9rem;
+      padding: 0 0.5rem;
+      color: #666;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Footer */
+    footer {
+      background-color: #002147;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="WeKids.png" alt="Logo">
+        <h1>We Kids United SJA</h1>
+      </div>
+      <nav>
+        <ul>
+          <!-- Added Home button -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="initiatives.html">Initiatives</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2 class="page-title">About Us</h2>
+    
+    <!-- About the Project -->
+    <section class="section">
+      <h2>About the Project</h2>
+      <p>
+        We Kids United SJA is the high school chapter of the renowned NGO, We Kids United. Our purpose is to increase long-term aid over short-term comfort while strengthening Haiti’s economy and healthcare system.
+      </p>
+    </section>
+    
+    <!-- About We Kids United -->
+    <section class="section">
+      <h2>About We Kids United</h2>
+      <p>
+        Founded by a group of college friends driven to make a difference, We Kids United Corp champions sustainable, community-driven solutions in Haiti. Our chapter channels that vision at the high school level.
+      </p>
+    </section>
+    
+    <!-- Executive Board -->
+    <section class="section">
+      <h2>Executive Board</h2>
+      <div class="board-grid">
+        <div class="board-card">
+          <img src="JunYoung Kim copy.jpg" alt="JunYoung (Paul) Kim">
+          <h3>JunYoung (Paul) Kim</h3>
+          <p> Founder & President; Deputy Secretary General of MyiMUN_Korea </p>
+        </div>
+        <div class="board-card">
+          <img src="Jian Lee.png" alt="Jian Lee">
+          <h3>Jian Lee</h3>
+          <p> Co-President; Secretary General of MyiMUN_Korea </p>
+        </div>
+        <div class="board-card">
+          <img src="Eugene.jpeg" alt="Eugene Kim">
+          <h3>Eugene Kim</h3>
+          <p> Director; Leads Haiti poster contest</p>
+        </div>
+        <div class="board-card">
+          <img src="JinHyuk.png" alt="JinHyuk Yang">
+          <h3>JinHyuk Yang</h3>
+          <p> </p>Treasurer </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 We Kids United SJA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
